@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* Reset */
+*, *::before, *::after {box-sizing: border-box;}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+}
+ul {list-style-type: none;}
+a {text-decoration: none;}
+img {max-width: 100%;}
+
+/* Header */
+.header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 130px 0;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header-top img {margin-bottom: 60px;}
+.header-top h1 {padding: 20px; color: #52565f;}
+.header-top p {padding: 15px; color: rgb(170, 162, 162); line-height: 1.6;}
+.header-top .btn-ios {
+    width: 85%;
+    padding: 25px;
+    margin-bottom: 35px;
+    background-color: #00c3a7;
+    border-radius: 35px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: normal;
+    box-shadow: 0 3px 2px 1px #0da188, 
+    0 9px 14px 7px rgba(13, 161, 136, .3);
+    cursor: pointer;
+}
+.header-top .btn-mac {
+    width: 85%;
+    padding: 25px;
+    background-color: #7b00ff;
+    border-radius: 35px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: normal;
+    box-shadow: 0 3px 2px 1px #6707d8, 
+    0 9px 14px 7px rgba(103, 7, 216, .3);
+    cursor: pointer;
+}
+
+/* Serviços para ImacOS 1 */
+.service-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.service-one h2 {font-size: 1.6em; padding: 20px 20px 0 20px; color: #52565f;}
+.service-one p {padding: 15px; color: rgb(170, 162, 162); line-height: 1.6}
+/* Serviços */
+.servicos {width: 100%; padding: 30px; margin: 60px auto;}
+.servicos .servico, h3 {margin-top: 40px; color: #52565f;}
+.servicos .servico, p {color: rgb(170, 162, 162); line-height: 1.6}
+
+/* Serviços para Imac 2 */
+.service-two {width: 100%; text-align: center; margin: 0 auto;}
+.service-two h2 {font-size: 1.6em; padding: 20px 20px 0 20px; color: #52565f;}
+.service-two p {padding: 28px; color: rgb(170, 162, 162); line-height: 1.6;}
+.service-two img {margin: 30px 0 65px 0;}
+
+/* Serviços para Imac 3 */
+.service-tree {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.service-tree h2 {font-size: 1.6em; padding: 20px 20px 0 20px; color: #52565f;}
+.service-tree p {padding: 28px; color: rgb(170, 162, 162); line-height: 1.6;}
+
+/* Representantes Parceiros da Empresa */
+.parceiros {
+    width: 100%;
+    margin: 45px 0 125px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parceiros figure img {margin-bottom: 70px;}
+.parceiros figure:nth-child(5) img {margin: 0;}
+
+/* Clipboard for iOS and Mac OS */
+.clipboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+} 
+.clipboard h4 {font-size: 1.6em; padding: 20px 20px 0 20px; color: #52565f;}
+.clipboard p {padding: 28px; color: rgb(170, 162, 162); line-height: 1.6;}
+.clipboard .btn-ios {
+    width: 95%;
+    padding: 25px;
+    margin-bottom: 35px;
+    background-color: #00c3a7;
+    border-radius: 35px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: normal;
+    box-shadow: 0 3px 2px 1px #0da188, 
+    0 9px 14px 7px rgba(13, 161, 136, .3);
+    cursor: pointer;
+}
+.clipboard .btn-mac {
+    width: 95%;
+    padding: 25px;
+    background-color: #7b00ff;
+    border-radius: 35px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: normal;
+    box-shadow: 0 3px 2px 1px #6707d8, 
+    0 9px 14px 7px rgba(103, 7, 216, .3);
+    cursor: pointer;
+}
+
+/* Rodapé Page */
+.rodape-bottom {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f8;
+}
+.rodape-bottom img {width: 45%; padding: 45px 0;}
+.rodape-bottom .options li {margin-bottom: 25px;}
+.rodape-bottom .options li a {color: #7d8184; font-size: 1.3em; font-family: Arial, Helvetica, sans-serif; font-weight: normal;}
+.rodape-bottom .social-icons {display: flex;}
+.rodape-bottom .social-icons li + li {margin-left: 25px;}
+.rodape-bottom .social-icons {margin-bottom: 20px;}
+.rodape-bottom .social-icons i {font-size: 1.5em; color: #444a51;}
+.rodape-bottom .social-icons i:hover {color: #00c3a7;}
+.rodape-bottom .options li a:hover {color: #00c3a7;}
+
+@media screen and (min-width: 64em) /* 1024px */ {
+    /* Header */
+    .header-top img {width: 75%; margin-bottom: 60px;}
+    .header-top h1 {font-size: 2.5em; padding: 20px; color: #52565f;}
+    .header-top p {
+        font-size: 1.5em;
+        padding: 15px;
+        color: rgb(170, 162, 162);
+        line-height: 1.6;
+    }
+    
+    /* Botões em Linha */
+    .buttons {display: flex;}
+    .header-top .btn-ios {
+        width: 250px;
+        padding: 25px;
+        margin-right: 20px;
+        background-color: #00c3a7;
+        border-radius: 35px;
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: normal;
+        box-shadow: 0 3px 2px 1px #0da188, 
+        0 9px 14px 7px rgba(13, 161, 136, .3);
+        cursor: pointer;
+    }
+    .header-top .btn-mac {
+        width: 250px;
+        padding: 25px;
+        background-color: #7b00ff;
+        border-radius: 35px;
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: normal;
+        box-shadow: 0 3px 2px 1px #6707d8, 
+        0 9px 14px 7px rgba(103, 7, 216, .3);
+        cursor: pointer;
+    }
+
+    /* Serviços para ImacOS 1 */
+    .service-one h2 {font-size: 1.7em; padding: 20px 20px 0 20px; color: #52565f;}
+    .service-one p {
+        width: 100%;
+        font-size: 1.3em;
+        padding: 15px;
+        color: rgb(170, 162, 162);
+        line-height: 1.6
+    }
+    .servicos {display: flex; justify-content: center;}
+    .service-one .servicos img {width: 45%; margin-right: 80px;}
+    .service-one .badges {width: 50%; text-align: left;}
+    .badges p {padding-left: 0;}
+
+    /* Serviços para Imac 2 */
+    .service-two h2 {font-size: 1.7em; padding: 20px 20px 0 20px; color: #52565f;}
+    .service-two p {
+        font-size: 1.5em; 
+        padding: 70px;
+        color: rgb(170, 162, 162);
+        line-height: 1.6;
+        text-align: center;
+    }
+    .service-two img {width: 60%; margin: 10px 0 65px 0;}
+
+    /* Serviços para Imac 3*/
+    .workflow {display: flex; margin: 25px 70px;}
+
+    /* Representantes Parceiros da Empresa */
+    .parceiros {flex-direction: row; width: 90%; justify-content: center; margin: 60px 40px;}
+    .parceiros figure img {margin: 45px; display: inline-block;}
+    .parceiros figure:nth-child(5) img {margin: 35px;}
+
+    /* Clipboard for iOS and Mac OS */
+    .clipboard .buttons {display: flex;}
+    .clipboard .btn-ios {
+        width: 250px;
+        padding: 25px;
+        margin-right: 20px;
+        background-color: #00c3a7;
+        border-radius: 35px;
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: normal;
+        box-shadow: 0 3px 2px 1px #0da188, 
+        0 9px 14px 7px rgba(13, 161, 136, .3);
+        cursor: pointer;
+    }
+    .clipboard .btn-mac {
+        width: 250px;
+        padding: 25px;
+        background-color: #7b00ff;
+        border-radius: 35px;
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: normal;
+        box-shadow: 0 3px 2px 1px #6707d8, 
+        0 9px 14px 7px rgba(103, 7, 216, .3);
+        cursor: pointer;
+    }
+    .clipboard h4 {font-size: 2em; padding: 20px 20px 0 20px; color: #52565f;}
+    .clipboard p {
+        font-size: 1.5em;
+        padding: 45px;
+        color: rgb(170, 162, 162); 
+        line-height: 1.6;
+    }
+
+    /* Rodapé Page */
+    .rodape-bottom {
+        width: 100%;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background-color: #f5f5f8;
+    }
+    .rodape-bottom .options {display: flex; margin: 25px;}
+    .rodape-bottom .options .col-1, .col-2, .col-3 {margin: 25px; text-align: left;}
+}    
